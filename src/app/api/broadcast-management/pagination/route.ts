@@ -4,6 +4,6 @@ import { NextRequest } from "next/server";
 export const GET = (request: NextRequest) => {
     const limit = request.nextUrl.searchParams.get("limit");
     const pagenumber = request.nextUrl.searchParams.get("page");
-
-    return fetchGet({ path: `programmanagement/broadcast/pagination?Limit=${limit}&Page=${pagenumber}` });
+    
+    return fetchGet({ path: `/Broadcast/pagination?Limit=${limit}&Page=${pagenumber}` });
 };

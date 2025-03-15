@@ -5,5 +5,5 @@ export const GET = (request: NextRequest) => {
     const limit = request.nextUrl.searchParams.get("limit");
     const pagenumber = request.nextUrl.searchParams.get("page");
 
-    return fetchGet({ path: `showmanagement/show/pagination?Limit=${limit}&Page=${pagenumber}` });
+    return fetchGet({ path: `/show/pagination?Limit=${limit}&Page=${pagenumber}` });
 };

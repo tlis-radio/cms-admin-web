@@ -5,6 +5,6 @@ export const GET = (request: NextRequest) => {
     const limit = request.nextUrl.searchParams.get("limit");
     const pagenumber = request.nextUrl.searchParams.get("page");
 
-    return fetchGet({ path: `usermanagement/User/pagination?IsActive=true&Limit=${limit}&Page=${pagenumber}` });
+    return fetchGet({ path: `/User/pagination?IsActive=true&Limit=${limit}&Page=${pagenumber}` });
 };
     
